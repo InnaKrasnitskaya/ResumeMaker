@@ -8,12 +8,14 @@
   <name>resumeservice Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey</artifactId>
-			<version>0.8-ea</version>
-		</dependency>
-                      
+
+		
+	  <dependency>
+		 <groupId>com.sun.jersey</groupId>
+		 <artifactId>jersey-server</artifactId>
+		 <version>1.16</version>
+	  </dependency>
+		
 	  <dependency>
 		  <groupId>org.hibernate</groupId> 
 		  <artifactId>hibernate-core</artifactId> 
@@ -47,20 +49,71 @@
 		  <groupId>org.springframework</groupId>
 		  <artifactId>spring-web</artifactId>
 		  <version>3.0.5.RELEASE</version>
+	  </dependency>
+	  	  
+	  <dependency>
+		  <groupId>org.springframework</groupId> 
+		  <artifactId>spring-jdbc</artifactId> 
+		  <version>3.0.5.RELEASE</version> 
 	  </dependency>	  
+	  
+	 <dependency>
+		  <groupId>org.springframework</groupId> 
+		  <artifactId>spring-tx</artifactId> 
+		  <version>3.0.5.RELEASE</version> 
+    </dependency>
+    <dependency>
+		  <groupId>org.springframework</groupId> 
+		  <artifactId>spring-orm</artifactId> 
+		  <version>3.0.5.RELEASE</version> 
+    </dependency>	  
+    
+    <!-- SLF4j logging implementation (failed without it) 
+			Will force all SLF4J calls to be delegated to log4j --> 
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.6.6</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.6.6</version>
+    </dependency>
+	  
+	  <dependency>
+		  <groupId>log4j</groupId> 
+		  <artifactId>log4j</artifactId> 
+		  <version>1.2.17</version> 
+	  </dependency>    
               
 	  <!--  JSR-330 --> 
 	  <dependency>
 		  <groupId>javax.inject</groupId> 
 		  <artifactId>javax.inject</artifactId> 
 		  <version>1</version> 
-	  </dependency>   
+	  </dependency>  
+	  
+ 	  <!--   PostgreSQL  --> 
+	  <dependency>
+		  <groupId>postgresql</groupId> 
+		  <artifactId>postgresql</artifactId> 
+		  <version>9.1-901.jdbc4</version> 
+	  </dependency>	 
+	  
+	   <!-- Spring AOP dependency -->
+	  <dependency>
+    	 <groupId>cglib</groupId>
+		 <artifactId>cglib</artifactId>
+		 <version>2.2</version>
+	  </dependency>
 	  
 	  <!-- Jersey + Spring -->
 	  <dependency>
 			<groupId>com.sun.jersey.contribs</groupId>
 			<artifactId>jersey-spring</artifactId>
-			<version>1.8</version>
+			<version>1.16</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework</groupId>
