@@ -10,8 +10,12 @@ public class CommonDAOImpl<T> {
 	
 	private Class<T> ClassType;
 	
+    public CommonDAOImpl(Class<T> classType) {
+    	ClassType = classType;
+    }
+	
     @Inject
-    private SessionFactory sessionFactory;
+    private SessionFactory sessionFactory;    
     
     public Session getSession() {
     	return sessionFactory.getCurrentSession();

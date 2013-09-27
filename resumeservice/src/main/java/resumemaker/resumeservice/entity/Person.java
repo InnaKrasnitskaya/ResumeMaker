@@ -23,8 +23,10 @@ public class Person {
 	private String surname;
 	
 	@Column(name = "\"LastName\"")
-	private String lastName;
+	private String lastName;	
 
+	public Person() {}
+	
 	public int getIdPerson() {
 		return idPerson;
 	}

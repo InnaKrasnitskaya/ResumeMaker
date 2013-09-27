@@ -25,38 +25,38 @@
 		 FATAL : It denotes the severe error events which lead the application to abort. -->
 	
 	<!-- Application Loggers -->
-	<logger name="org.travelplan">
+	<logger name="resumemaker.resumeservice">
 		<level value="debug, file" />
 	</logger>
 		
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 	
 	<logger name="org.springframework.beans">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 	
 	<logger name="org.springframework.context">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 
 	<logger name="org.springframework.web">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 
 	<logger name="org.springframework.jdbc">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 	
 	<logger name="org.springframework.orm">
-		<level value="warn" />
+		<level value="debug" />
 	</logger>
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="warn" /> <!-- warn, error, fatal messages for other packages-->
+		<priority value="debug" /> <!-- warn, error, fatal messages for other packages-->
 		<appender-ref ref="console" />
 		<appender-ref ref="file" />
 	</root>

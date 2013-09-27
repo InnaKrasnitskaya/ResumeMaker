@@ -109,6 +109,14 @@
 		 <version>2.2</version>
 	  </dependency>
 	  
+	  <!-- Allow to define a new class at runtime and 
+		     to modify a class file when the JVM loads it  --> 
+	  <dependency>
+		  <groupId>javassist</groupId> 
+		  <artifactId>javassist</artifactId> 
+		  <version>3.12.1.GA</version> 
+	  </dependency>
+	  
 	  <!-- Jersey + Spring -->
 	  <dependency>
 			<groupId>com.sun.jersey.contribs</groupId>
